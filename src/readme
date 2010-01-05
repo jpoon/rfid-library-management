@@ -1,0 +1,85 @@
+LICENSE
+------------------------------------------------------------------
+Copyright (c) 2003-2005, 2009 Jason Poon <eece375@jasonpoon.ca>.
+
+This is free software; you can redistribute it and/or modify it under the terms of the 
+GNU Lesser General Public License as published by the Free Software Foundation; either 
+version 3.0 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU Lesser General Public License for more details.
+
+This project was completely developed in windows XP.  Some of the functionality,
+such as the Xbee drivers, are only available in windows XP.  For reliable performance,
+please ensure you use windows XP to view this project.
+
+
+MICROCONTROLLER
+------------------------------------------------------------------
+Instructions for making software for handheld unit:
+
+1. make *.hex file by executing the Makefile located in ./atmel/default
+2. using either AVRDude or AVRStudio, flash *.hex file onto microcontroller
+
+
+REQUIREMENTS AND INSTALLATION INSTRUCTIONS
+------------------------------------------------------------------
+XBEE Development Board
+An XBEE development board is required for submission and reception of data
+from the base station of the system.  However, because this development 
+board was not paid for by UBC, it will not be retained by UBC.  Therefore, if you
+require to fun this project in it's production state, please consult Digi, Maxstream 
+or another electrnics electonics supplier for information on purchasing an XBee development
+board.
+
+
+PHP AND MYSQL
+PHP v5.2.6 and mySQL v5.0 were used for the database and web server.
+Refer to each product's user manual for instruction on how to install.
+
+
+WEB SERVER
+Apache HTTP server v2.2 was used as the web host for this project.
+Please see the Apache user manual for installation instructions.
+
+
+JAVA INTERFACE
+There are many libraries and functionalities that need to be installed 
+for the java interace to perform normally.  Below is a description installation
+that must be performed.
+
+1) Java Runtime environment:
+	- Please visit Sun Microsystems website and download and install the most
+	  recent version of the Java Runtime Environment
+
+2) MySQL JDBC connector
+	- Go to the MySQL download page, and download the most recent of the
+	  MySQL Jconnector for MySQL and Java connection.
+	- You will have to extract the MySQL zip file in a location of your choice
+	- Add the location of the file mysql-connector-java-[X.X.X]-bin.jar to your
+	  system classpath.  In windows, this can be found by going to start->
+	  control panel -> system -> advanced -> environment variables
+
+3) RXTX files and dlls
+	- Go to the directory ./XBee Serial Comm
+	- Add the files comm.jar and RXTXcomm.jar to your java RTE extension libaries
+	  They should be added to /.../[your java home]/lib/ext/
+	- Add rxtxParallel.dll and rxtxSerial.dll to your Java RTE bin
+	  This can be found in /.../[your java home]/bin
+
+4) To run the java interface, two java executables must be started using the command line.
+   In the system shell, navigate to ./XBee Serial Comm/bin/xbee/serial
+   First, type 'java ProgramBridge' This will start the program communication server.
+   In another shell window, again navigate to ./XBee Serial Comm/bin/xbee/serial
+   Then type 'java SerialHandler X" where X is the number of the COM port that the XBee development
+   board is connected to.
+
+
+DATABASE
+All tables must be implemented in the database before any functionality
+can be used.  To do this, open the mySQL command prompt, and create a new
+database named "libarary."  See mySQL user manual for instructions on how to do this.
+
+Copy and paste the contents of eash *.sql file into the mySQL command prompt, 
+submitting each to the database.

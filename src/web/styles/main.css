@@ -1,0 +1,102 @@
+body {
+    padding:5px;
+}
+
+a {
+	color: #5659a6;
+	text-decoration: none
+}
+
+a:hover {
+	color: #b32226;
+	text-decoration: none
+}
+
+div.formError {
+    font-size: 13px;
+    color:#ff0000;
+    padding:0px 0px 0px 0px;
+}
+
+div.formSuccess {
+    font-size: 13px;
+    color:green;
+    padding:0px 0px 0px 0px;
+}
+
+div.content {
+    width:766px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #cd6667;
+    padding: 15px;
+    font-family: Serif;
+    font-size: 16px;
+}
+
+div.footer {
+	background-color: #cd6667;
+    width:800px;
+    height: 18px;
+    font-size:12px;
+    padding: 2px 0px 2px 0px;
+    font-family: Serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+div.title {
+    font-weight: bold;
+    line-height: 125%;
+    padding: 0px 0px 5px 0px;
+}
+
+table.forms {
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+table.forms td {
+    padding: 3px;
+}
+
+table.search {
+    background-color:#FFFFFF;
+    width: 750px;
+    border-collapse: collapse;
+}
+
+table.search td {
+    padding: 5px;
+    border: solid #000 1px;
+}
+
+table.checkout {
+    border: solid #000 1px;
+    border-collapse: collapse;
+}
+
+table.checkout td {
+    padding: 5px;
+}
+
+table.bookDetail {
+    background-color:#FFFFFF;
+    width: 450px;
+    border-collapse: collapse;
+}
+
+table.bookDetail td {
+    padding: 5px;
+    border: solid #000 1px;
+}
+
+.highLightRowCol {
+    font-style: italic;
+    text-align: left;
+    background-color: #FFFFCC;
+}
+
+.dropDown {
+    width: 150px;
+}
