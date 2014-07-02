@@ -1,6 +1,8 @@
-RFID Library Management System
-==============================
+RFID Library Management System (eece375)
+========================================
 
+Description
+-----------
 As radio frequency identification (RFID) technology continues to mature, the technology is becoming increasingly affordable. 
 As a direct result of the reduced cost for the technology, RFID is being applied in a variety of forms. 
 One area where RFID technology is being utilized is in libraries. 
